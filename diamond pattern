@@ -1,0 +1,47 @@
+""
+Write a program to print diamond
+
+some imple steps to follow:
+    step1: first the input from user value n i.e how many lines of diamond you want
+    step2:then use three for loops where 
+    i.first you print space n-i times
+    ii.second for loop will print * upto (2*i)-1 times 
+    iii.then again print * n-i times
+    Similarily print inverted triangle 
+                                        
+"""
+n=int(input("Enter size of diamond:"))
+
+
+for i in range(1,n):
+
+    for j in range(0,n-i):
+
+        print(" ",end=' ')
+
+    for j in range(0,(2*i)-1):
+
+        print("*",end=' ')
+
+    for j in range(0,n-i):
+        print(" ",end=' ')
+
+    print()
+
+for i in range(n,-1,-1):
+
+    for j in range(0,n-i):
+
+        print(" ",end=' ')
+
+    for j in range(0,(2*i)-1):
+
+        print("*",end=' ')
+
+    for j in range(0,n-i):
+
+        print(" ",end=' ')
+
+    print()
+
+	
